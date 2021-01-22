@@ -42,7 +42,7 @@ The features of this project are as below:
 
 ## Live Demo
 
-[Live demo link]()
+[Live demo link](https://morning-stream-34863.herokuapp.com/)
 
 ## Getting Started
 
