@@ -1,6 +1,11 @@
 <div class="container mt-5">
   <div class="columns">
-    <%= render 'trends' %>
+    <% if user_signed_in? %>
+      <%= render 'profile' %>
+    <% else %>
+      <%= render 'trends' %>
+    <% end %>
+
     <%= render 'feed' %>
     <%= render 'who_to_follow' %>
   </div>
