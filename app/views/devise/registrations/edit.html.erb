@@ -5,7 +5,12 @@
 
       <h2 class="title is-2">Edit <%= resource_name.to_s.humanize %></h2>
       <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-        <%= f.error_notification %>
+
+        <% if f.error_notification %>
+          <div class="notification is-danger is-light">
+            <p><%= f.error_notification %></p>
+          </div>
+        <% end %>
 
           <div class="field">
             <div class="control">
